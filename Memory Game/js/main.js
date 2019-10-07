@@ -19,3 +19,6 @@ if (cardsInPlay.length === 2) {
 };
 
 
+//Still learning about gitHub.
+
+
