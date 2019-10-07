@@ -25,5 +25,3 @@ checkForMatch();
 
 // Basically all this is having you do is move the logic that determines if you have a match into it's own
 // function so you can use it in the future without having to write it again. Re-usable code is the best.
-
-
