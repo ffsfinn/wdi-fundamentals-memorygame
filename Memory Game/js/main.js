@@ -2,6 +2,7 @@ var cards = ['queen' , 'queen' , 'king' , 'king'];
 var cardsInPlay = [];
 
 function checkForMatch() {
+	// The logic is here, in this function now.
 	if (cardsInPlay[0] === cardsInPlay[1]) {
   		console.log("You found a match!");
 	} else {
@@ -11,6 +12,7 @@ function checkForMatch() {
 
 function flipCard(cardID) {
 	if (cardsInPlay.length === 2) {
+		// The logic used to be here but now is in the function checkForMatch, which is now called.
 		checkForMatch();
 	}
 	cardsInPlay.push(cards[cardID]);
@@ -21,9 +23,7 @@ flipCard(0);
 flipCard(2);
 checkForMatch();
 
-//The solution came out correct. However wtf does this even mean? 
-//"Now, call the checkForMatch function from inside the flipCard function, where the lines above used to sit inside the if statement."
-//When I call it in the function it doesn't work. Its scoped??? Am I missing something here?
-//Just gonna leave it be for now...
+// Basically all this is having you do is move the logic that determines if you have a match into it's own
+// function so you can use it in the future without having to write it again. Re-usable code is the best.
 
 
