@@ -21,9 +21,9 @@ var cardsInPlay = [];
 
 function checkForMatch() {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-  		alert('You found a match!');
+  		alert('You found a match!'); //Stops here I believe.
 	} else {
-		alert('Sorry try again...');
+		alert('Sorry try again...'); //Not sure why this wont alert. It did before?
 	};
 };
 
